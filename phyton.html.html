@@ -1,8 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Bahasa phyton</title>
- </head>
-<body>
-</body>
-</html>
+class Laptop:
+    def __init__(self, brand, model, price, features):
+        self.brand = brand
+        self.model = model
+        self.price = price
+        self.features = features
+
+    def display_info(self):
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Price: ${self.price}")
+        print("Features:")
+        for feature in self.features:
+            print(f"- {feature}")
+        print()
+
+# Create laptops
+hp_laptop1 = Laptop("HP", "Pavilion 15", 799.99, ["15.6-inch Full HD display", "Intel Core i5 processor", "8GB RAM", "256GB SSD"])
+lenovo_laptop1 = Laptop("Lenovo", "ThinkPad X1 Carbon", 1499.99, ["14-inch Full HD display", "Intel Core i7 processor", "16GB RAM", "512GB SSD"])
+toshiba_laptop1 = Laptop("Toshiba", "Portege X30", 1299.99, ["13.3-inch Full HD display", "Intel Core i5 processor", "8GB RAM", "256GB SSD"])
+asus_laptop1 = Laptop("Asus", "ZenBook 14", 999.99, ["14-inch Full HD display", "Intel Core i7 processor", "16GB RAM", "512GB SSD"])
+
+# Display laptop info
+print("Laptop Brochure")
+print("------------------")
+hp_laptop1.display_info()
+lenovo_laptop1.display_info()
+toshiba_laptop1.display_info()
+asus_laptop1.display_info()
+
+class Phone:
+    def __init__(self, brand, model, price, features):
+        self.brand = brand
+        self.model = model
+        self.price = price
+        self.features = features
+
+    def display_info(self):
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Price: ${self.price}")
+        print("Features:")
+        for feature in self.features:
+            print(f"- {feature}")
+        print()
+
+# Create phones
+iphone1 = Phone("Apple", "iPhone 13 Pro", 999.99, ["6.1-inch Super Retina XDR display", "A15 Bionic chip", "128GB storage", "Triple camera system"])
+oppo1 = Phone("Oppo", "Find X3 Pro", 1299.99, ["6.7-inch AMOLED display", "Snapdragon 888 processor", "256GB storage", "Quad camera system"])
+vivo1 = Phone("Vivo", "X70 Pro+", 1099.99, ["6.78-inch AMOLED display", "Snapdragon 888+ processor", "256GB storage", "Gimbal stabilization system"])
+
+# Display phone info
+print("Phone Brochure")
+print("------------------")
+iphone1.display_info()
+oppo1.display_info()
+vivo1.display_info()
