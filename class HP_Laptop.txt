@@ -1,3 +1,26 @@
 class HP_Laptop:
-    def _init_(self, model, price, features):
-        self.model = model
+    def __init__(self, model, price, features):
+        self.model = model
+        self.price = price
+        self.features = features
+
+    def display_info(self):
+        print(f"Model: {self.model}")
+        print(f"Price: ${self.price}")
+        print("Features:")
+        for feature in self.features:
+            print(f"- {feature}")
+
+# Create HP laptops
+laptop1 = HP_Laptop("HP Pavilion 15", 799.99, ["15.6-inch Full HD display", "Intel Core i5 processor", "8GB RAM", "256GB SSD"])
+laptop2 = HP_Laptop("HP Envy x360", 999.99, ["13.3-inch Full HD touchscreen display", "AMD Ryzen 5 processor", "16GB RAM", "512GB SSD"])
+laptop3 = HP_Laptop("HP Spectre x360", 1299.99, ["13.5-inch 4K touchscreen display", "Intel Core i7 processor", "16GB RAM", "1TB SSD"])
+
+# Display laptop info
+print("HP Laptop Brochure")
+print("------------------")
+laptop1.display_info()
+print()
+laptop2.display_info()
+print()
+laptop3.display_info()
