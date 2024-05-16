@@ -1,0 +1,3 @@
+class HP_Laptop:
+    def _init_(self, model, price, features):
+        self.model = model
